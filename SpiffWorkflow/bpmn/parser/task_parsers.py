@@ -132,6 +132,14 @@ class ScriptTaskParser(TaskParser):
         """
         return one(self.xpath('.//bpmn:script')).text
 
+
+class ServiceTaskParser(TaskParser):
+    """
+    Parses a service task
+    """
+    pass
+
+
 class IntermediateCatchEventParser(TaskParser):
     """
     Parses an Intermediate Catch Event. This currently onlt supports Message and Timer event definitions.
